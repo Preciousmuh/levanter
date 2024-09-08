@@ -2,8 +2,8 @@ const toBool = (x) => x == 'true'
 const { Sequelize } = require('sequelize')
 const { existsSync } = require('fs')
 const path = require('path')
-const configPath = path.join(__dirname, './config.env')
-const databasePath = path.join(__dirname, './database.db')
+const configPath = path.join(__preciousmuh, './config.env')
+const databasePath = path.join(__preciousmuh, './database.db')
 if (existsSync(configPath)) require('dotenv').config({ path: configPath })
 const DATABASE_URL =
   process.env.DATABASE_URL === undefined ? databasePath : process.env.DATABASE_URL
